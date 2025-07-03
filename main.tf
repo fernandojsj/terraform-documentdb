@@ -2,9 +2,10 @@ module "documentdb" {
   source = "./modules/docdb"
 
   # Configuração básica
-  cluster_identifier = var.cluster_identifier
-  master_username    = var.master_username
-  master_password    = var.master_password
+  cluster_identifier          = var.cluster_identifier
+  master_username             = var.master_username
+  master_password             = var.master_password
+  manage_master_user_password = var.manage_master_user_password
 
   # Rede e segurança
   subnet_ids             = var.subnet_ids

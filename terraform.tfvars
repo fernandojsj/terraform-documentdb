@@ -6,7 +6,8 @@ environment = "dev"
 # Cluster DocumentDB
 cluster_identifier = "meu-cluster-docdb"
 master_username = "docdbadmin"
-master_password = "SuaSenhaSegura123!"
+master_password = "SuaSenhaSegura123!"  # Ignorado se manage_master_user_password = true
+manage_master_user_password = true      # true = usa AWS Secrets Manager
 
 # Rede
 subnet_ids = ["subnet-xxxxxxxxx", "subnet-yyyyyyyyy"]
